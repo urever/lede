@@ -13,6 +13,10 @@ on:
   release:
     types: [published]
 
+13
+  release:
+14
+    types: [published]
 jobs:
 
   build_openwrt:
@@ -69,6 +73,8 @@ jobs:
           du -h --max-depth=1 ./ --exclude=build_dir --exclude=bin
           du -h --max-depth=1 ./build_dir
           du -h --max-depth=1 ./bin
+          
+
 
       - name: Prepare artifact
         run: |
